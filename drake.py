@@ -8,6 +8,7 @@ from ncount import *
 from prt import *
 from wise import *
 
+#
 #based on https://github.com/DeaconDesperado/pydrake/blob/master/drake.py
 #
 # see https://en.wikipedia.org/wiki/Drake_equation
@@ -37,6 +38,7 @@ def drake():
 	Fi = random.uniform(0.01,0.2)
 	Fc = random.uniform(0.01,0.2)
 	L = daysearth()
+	prt (('\nHow many alien civilizations? \n'),REPL)
 	prt (('Number of stars in the Milky Way '+ str(R)),REPL)
 	prt (('Fraction of stars with planetary systems '+str(Fp)),REPL)
 	prt (('Number of planets suitable for life '+ str(Ne)),REPL)
